@@ -1,0 +1,109 @@
+/* Configuración general */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Barra de Búsqueda */
+#searchInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.2);
+    outline: none;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-radius: 8px; /* Redondear esquinas de la tabla */
+    overflow: hidden; /* Para que el radius afecte a los th/td */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Encabezado Fijo (Sticky Header) */
+th {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1); /* Sombra para el encabezado fijo */
+}
+
+/* Filas de la Tabla */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Colores por Tema */
+.topic-interpreting { background-color: #e8eaf6; }
+.topic-general-med { background-color: #e0f2f1; }
+.topic-admin { background-color: #fbe9e7; }
+.topic-legal { background-color: #fff9c4; }
+.topic-integumentary { background-color: #e0f7fa; }
+.topic-reproductive { background-color: #fce4ec; }
+.topic-musculoskeletal { background-color: #e8f5e9; }
+.topic-urinary { background-color: #f3e5f5; }
+.topic-cns { background-color: #ede7f6; }
+.topic-respiratory { background-color: #e0f7fa; }
+.topic-cardio { background-color: #ffebee; }
+.topic-endocrine { background-color: #fffde7; }
+.topic-education { background-color: #fff3e0; }
+.topic-pharma { background-color: #fce4ec; }
+.topic-acronyms { background-color: #dcedc8; }
+.topic-symptoms { background-color: #fffde7; }
+.topic-specialties { background-color: #d1c4e9; } 
+.topic-procedures { background-color: #c5cae9; } 
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    th, td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
